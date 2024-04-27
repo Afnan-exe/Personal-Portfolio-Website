@@ -1,0 +1,76 @@
+﻿@{
+	Layout = null;
+	@model Portfolio.Models.LoginRegister;
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Login</title>
+
+
+	<link rel="stylesheet" href="~/LoginAssets/style.css">
+
+
+
+</head>
+<body>
+	<div class="container" id="container">
+		@* <div class="form-container sign-up-container">
+		<form action="#">
+		<h1>Create Account</h1>
+		<div class="social-container">
+		<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+		<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+		<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+		</div>
+		<span>or use your email for registration</span>
+		<input type="text" placeholder="Name" />
+		<input type="email" placeholder="Email" />
+		<input type="password" placeholder="Password" />
+		<button>Sign Up</button>
+		</form>
+		</div> *@
+		<div class="form-container sign-in-container">
+			<form asp-action="Create">
+				<h1>Register</h1>
+				<input asp-for="UserName" type="text" title="Enter Your UserName" placeholder="Enter Your Name" />
+				<span asp-validation-for="UserName" class="text-danger"></span>
+
+				<input asp-for="Email" type="email" title="Enter Your Email" placeholder="Email" />
+				<span asp-validation-for="Email" class="text-danger"></span>
+
+				<input asp-for="Password" title="Enter Your Password" type="password" placeholder="Password" class="password-input" />
+				<span asp-validation-for="Password" class="text-danger"></span>
+
+				<input asp-for="PasswordConfirmed" title="Re-Enter Your Password" type="password" placeholder="Re-Enter Your Password" class="password-input" />
+				<span asp-validation-for="PasswordConfirmed" class="text-danger"></span>
+
+				<input type="checkbox" id="toggle-password-checkbox" title="Show Password" /> <label for="toggle-password-checkbox">Show Password</label>
+				<p class="text-danger">@ViewBag.m</p>
+				<p class="text-danger">@ViewBag.c</p>
+				<input type="submit" title="Register" name="Register" />
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+
+				<div class="overlay-panel overlay-right">
+					<h1>Hello, Friend!</h1>
+					<p>Enter your personal details and start journey with us</p>
+					<a asp-action="Dashboard" title="Back To Dashboard Navigation" asp-controller="Home" class="ghost .button" id="">Back to Dashboard</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+
+<script src="~/LoginAssets/script.js"></script>
+
+</html>

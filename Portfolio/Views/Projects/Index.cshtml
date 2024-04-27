@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Portfolio.Models.Projects>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create" title="Create New">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectLink)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjectName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjectDescription)
+            </td>
+            <td>
+                    <img src="@Html.DisplayFor(modelItem => item.Image)" height="200px" width="200px" alt="@Html.DisplayFor(modelItem => item.ProjectName)" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjectLink)
+            </td>
+            <td>
+                    <a asp-action="Edit" title="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" title="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" title="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

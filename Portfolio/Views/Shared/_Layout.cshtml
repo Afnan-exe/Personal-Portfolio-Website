@@ -1,0 +1,238 @@
+﻿@{
+    var check = Context.Session.GetString("i");
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description"
+          content="Discover my professional portfolio—highlighting innovative projects and exceptional designs that capture the essence of my creative expertise."/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>-Portfolio</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="~/css/vendor.css">
+    <link rel="stylesheet" href="~/css/styles.css">
+    <link href="~/css/site.css" rel="stylesheet" />
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="~/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/favicon-16x16.png">
+    
+
+ 
+   
+    
+</head>
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="line"></div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header
+        ================================================== -->
+        <header id="masthead" class="s-header">
+
+            <div class="s-header__block">
+                <div class="s-header__branding">
+                    <p class="site-title">
+                        <a id="redirectLink" title="Home Navigation" asp-controller="Home" asp-action="Index" rel="home">Afnan.</a>
+                    </p>
+                </div>
+
+                <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+            </div> <!-- end s-header__block -->
+
+            <div class="row s-header__nav-wrap">
+
+                <nav class="s-header__nav">
+                    <ul>
+                        <li class="current"><a href="#intro" title="Intro Navigation" class="smoothscroll">Intro</a></li>
+                        <li><a href="#about" title="About Navigation" class="smoothscroll">About</a></li>
+                        <li><a href="#works" title="Works Navigation" class="smoothscroll">Works</a></li>
+                        <li><a href="#colophon" title="Contact Navigation" class="smoothscroll">Contact</a></li>
+                        @if (check!=null)
+                        {
+                            <li><a asp-action="Dashboard" title="Dashboard Navigation" asp-controller="Home" class="">Dashboard</a></li>
+                            <li><a asp-action="LogOut" title="LogOut" asp-controller="LoginRegisters" class="">Logout</a></li>
+                        }
+                    </ul>
+                </nav> <!-- end s-header__nav -->
+
+                <ul class="s-header__social">
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100054603271648" target="_blank" title="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
+                            <span class="u-screen-reader-text">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/muhammadafnan25" target="_blank" title="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
+                            <span class="u-screen-reader-text">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Afnan-exe" target="_blank" title="Github">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path></svg>
+                            <span class="u-screen-reader-text">Github</span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>  <!-- end s-header__social -->
+
+            </div> <!-- end s-header__nav-wrap -->
+
+        </header> <!-- end s-header -->
+
+  
+        
+            @RenderBody()
+        
+    
+
+        <!-- # site footer
+          ================================================== -->
+        <footer id="colophon" class="s-footer">
+
+            <div class="row s-footer__contact-header">
+                <div class="column lg-12">
+                    <h2 class="text-pretitle">Get In Touch</h2>
+
+                    <p class="text-huge-title">
+                        Feel free to reach out if you wanna collaborate with me, or simply have a chat.
+                    </p>
+                </div>
+            </div> <!-- end s-footer__content -->
+
+            <div class="row s-footer__contact-content">
+
+                <div class="column lg-5 md-6 stack-on-900 left-block">
+                    <p>
+                        Connecting can spark creativity,
+                        A blend of ideas that set minds free.
+                        It builds bridges, expands our scope,
+                        Together, there's more room for hope.
+
+                        <div class="s-footer__buttons">
+                            <a href="mailto:Afnan1736+business@gmail.com?subject=OFFER-INQUIRY" title="Mail" class="btn btn--primary u-fullwidth">Say Hello</a>
+                            <a href="~/MuhammadAfnan_Resume.pdf" download="MuhammadAfnan_Resume" title="My Resume" class="btn btn--stroke u-fullwidth">Get My CV</a>
+                        </div>
+
+                    </p>
+                </div>
+
+                <div class="column lg-4 md-5 stack-on-900 right-block">
+
+                    <div class="s-footer__contact-info">
+                        <h2 class="text-subtitle">
+                            Start A Project
+                        </h2>
+                        <ul class="link-list">
+                            <li><a href="mailto:Afnan1736+business@gmail.com" title="Mail">Afnan1736+business@gmail.com</a></li>
+                            <li><a href="tel:+923182632047" title="Phone">+92 318 2632047</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="s-footer__social">
+                        <h2 class="text-subtitle">
+                            Connect
+                        </h2>
+                        <ul class="link-list">
+                            <li><a href="https://www.facebook.com/profile.php?id=100054603271648" title="Facebook" target="_blank">Facebook</a></li>
+                            <li><a href="https://twitter.com/muhammadafnan25" target="_blank" title="Twitter">Twitter</a></li>
+                            <li><a href="https://pk.linkedin.com/in/muhammad-afnan-61567a260?trk=people-guest_people_search-card" title="LinkedIn" target="_blank">LinkedIn</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div> <!-- end s-footer__contact-content -->
+
+            <div class="row s-footer__bottom">
+                <div class="column ss-copyright">
+                    <span>© Copyright Afnan 2022</span>
+                    
+                </div>
+
+                <div class="ss-go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top" title="Back To Top">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"></path></svg>
+                    </a>
+                </div>
+            </div> <!-- end s-footer__bottom-->
+
+        </footer> <!-- end s-footer -->
+        <!-- photoswipe background
+        ================================================== -->
+        <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title="Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div> <!-- end photoSwipe background -->
+
+    </div> <!-- end s-pagewrap -->
+    
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/js/plugins.js"></script>
+    <script src="~/js/main.js"></script>
+
+
+</body>
+</html>
+
+

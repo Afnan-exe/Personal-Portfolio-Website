@@ -41,7 +41,7 @@ To run the project locally after installation:
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page (https://github.com/yourusername/yourprojectname/issues). Here's how you can contribute:
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page (https://github.com/Afnan-exe/Personal-Portfolio-Website/issues). Here's how you can contribute:
 
 1. Fork the Project
 2. Create your Feature Branch (git checkout -b feature/CoolFeature)
@@ -56,10 +56,10 @@ Distributed under the MIT License. See LICENSE for more information.
 ## 📮 Contact
 
 - **Email**: email@example.com
-- **GitHub**: [yourusername](https://github.com/yourusername)
-- **Twitter**: [@your_twitter](https://twitter.com/your_twitter)
-- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/your-linkedin)
-- **Facebook**: [Your Facebook](https://www.facebook.com/your.facebook.page)
+- **GitHub**: [yourusername](https://github.com/Afnan-exe)
+- **Twitter**: [@your_twitter](https://twitter.com/MuhammadAfnan25)
+- **LinkedIn**: [Your LinkedIn](https://pk.linkedin.com/in/muhammad-afnan-61567a260?trk=people-guest_people_search-card)
+- **Facebook**: [Your Facebook](https://www.facebook.com/profile.php?id=100054603271648)
 
 ## 💖 Acknowledgments
 

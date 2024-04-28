@@ -56,10 +56,10 @@ Distributed under the MIT License. See LICENSE for more information.
 ## 📮 Contact
 
 - **Email**: email@example.com
-- **GitHub**: [yourusername](https://github.com/Afnan-exe)
-- **Twitter**: [@your_twitter](https://twitter.com/MuhammadAfnan25)
-- **LinkedIn**: [Your LinkedIn](https://pk.linkedin.com/in/muhammad-afnan-61567a260?trk=people-guest_people_search-card)
-- **Facebook**: [Your Facebook](https://www.facebook.com/profile.php?id=100054603271648)
+- **GitHub**: [Afnan-exe](https://github.com/Afnan-exe)
+- **Twitter**: [@MuhammadAfnan25](https://twitter.com/MuhammadAfnan25)
+- **LinkedIn**: [Muhammad Afnan](https://pk.linkedin.com/in/muhammad-afnan-61567a260?trk=people-guest_people_search-card)
+- **Facebook**: [Muhammad Afnan](https://www.facebook.com/profile.php?id=100054603271648)
 
 ## 💖 Acknowledgments
 

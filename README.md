@@ -55,7 +55,7 @@ Distributed under the MIT License. See LICENSE for more information.
 
 ## 📮 Contact
 
-- **Email**: email@example.com
+- **Email**: Afnan1736@gmail.com
 - **GitHub**: [Afnan-exe](https://github.com/Afnan-exe)
 - **Twitter**: [@MuhammadAfnan25](https://twitter.com/MuhammadAfnan25)
 - **LinkedIn**: [Muhammad Afnan](https://pk.linkedin.com/in/muhammad-afnan-61567a260?trk=people-guest_people_search-card)

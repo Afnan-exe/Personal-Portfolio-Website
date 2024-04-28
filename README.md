@@ -20,7 +20,7 @@ This project is designed to act as both a showcase for my personal software proj
 To set up a local copy, follow these simple example steps.
 
 git clone https://github.com/Afnan-exe/Personal-Portfolio-Website.git
-cd yourprojectname
+cd Portfolio
 # Follow local development setup steps
 
 ### Setting Up the Database

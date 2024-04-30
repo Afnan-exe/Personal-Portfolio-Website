@@ -49,10 +49,6 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 4. Push to the Branch (git push origin feature/CoolFeature)
 5. Open a Pull Request
 
-## 📄 License
-
-Distributed under the MIT License. See LICENSE for more information.
-
 ## 📮 Contact
 
 - **Email**: Afnan1736@gmail.com

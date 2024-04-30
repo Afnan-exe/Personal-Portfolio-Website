@@ -51,7 +51,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📮 Contact
 
-- **Email**: Afnan1736@gmail.com
+- **Email**: Afnan1736+business@gmail.com
 - **GitHub**: [Afnan-exe](https://github.com/Afnan-exe)
 - **Twitter**: [@MuhammadAfnan25](https://twitter.com/MuhammadAfnan25)
 - **LinkedIn**: [Muhammad Afnan](https://pk.linkedin.com/in/muhammad-afnan-61567a260?trk=people-guest_people_search-card)

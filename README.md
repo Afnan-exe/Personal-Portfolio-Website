@@ -25,12 +25,10 @@ cd Portfolio
 
 ### Setting Up the Database
 
-Before running the application, you need to set up the database:
-
-1. Navigate to the `Database` folder.
-2. Locate the SQL file.
-3. Use your preferred SQL management tool (like SQL Server Management Studio) to run the SQL script in your database environment.
-4. Update the connection strings in the application to point to your newly created database.
+1. Before running the application, you need to set up the database:
+2. Ensure you have Entity Framework Core installed in your project.
+3. Open the Package Manager Console in Visual Studio.
+4. Run the **update-database** command to apply migrations and update the database
 
 ## 💻 Usage
 
